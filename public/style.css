@@ -1,5 +1,6 @@
 body {
-  padding: 30px;
+  width: 80%;
+  margin: 2rem auto;
   font-family: 'Rye', cursive;
   color: #ccad00;
   background-image: url("/harry_potter.gif");
@@ -58,4 +59,9 @@ a:hover {
 
 td,th {
   padding: .5rem;
+}
+
+table {
+  margin: 0 auto;
+  width: 50%;
 }
