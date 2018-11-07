@@ -35,7 +35,8 @@ end
 
 # update
 post('/students/:id') do
-  
+  Student.new(params).update
+  redirect to '/students'
 end
 
 # destroy
