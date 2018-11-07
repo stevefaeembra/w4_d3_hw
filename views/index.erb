@@ -6,6 +6,7 @@
     <th>House</th>
     <th></th>
     <th></th>
+    <th></th>
   </thead>
   <tbody>
     <% @students.each do |student| %>
@@ -16,6 +17,7 @@
         <td><%= ['Gryffyndor','Hufflepuff','Ravenclaw','Slytherin'][student.house_id-1] %></td>
         <td><a href="/students/<%= student.house_id %>">View</a></td>
         <td><a href="/students/<%= student.house_id %>/edit">Edit</a></td>
+        <td><a href="/students/<%= student.house_id %>/delete">Delete</a></td>
       </tr>
     <% end %>
   </tbody>
