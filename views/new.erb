@@ -1,7 +1,20 @@
-<label for="house_select">Select House:</label>
-<select name="house_id" id="house_select">
-  <option value="1">Gryffindor</option>
-  <option value="2">Hufflepuff</option>
-  <option value="3">Ravenclaw</option>
-  <option value="4">Slytherin</option>
-</select>
+<form action="/students" method="post">
+  <label for="first-name">First Name</label><br>
+  <input id="first-name" type="text" name="first_name">
+  <hr>
+  <label for="last-name">Last Name</label><br>
+  <input id="last-name" type="text" name="last_name">
+  <hr>
+  <label for="age">Age</label><br>
+  <input id="age" type="text" name="age">
+  <hr>
+  <label for="house_select">Select House:</label>
+  <select name="house_id" id="house_select" name="house">
+    <option value="1">Gryffindor</option>
+    <option value="2">Hufflepuff</option>
+    <option value="3">Ravenclaw</option>
+    <option value="4">Slytherin</option>
+  </select>
+  <hr>
+  <input type="submit" value="Enrol student!">
+</form>

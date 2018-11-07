@@ -4,6 +4,11 @@ require_relative('models/student')
 require_relative('models/house')
 also_reload('./models/*')
 
+# new
+get ('/students/new') do
+  erb(:new)
+end
+
 # index
 get('/students') do
   @students = Student.all
@@ -16,12 +21,21 @@ get('/students/:id') do
   erb(:show)
 end
 
-# new
-
 # create
+post('/students') do
+  Student.new(params).save
+  redirect to '/students'
+end
 
 # edit
+get('/students/:id/edit') do
+  @student = Student.find(params[:id])
+  erb(:edit)
+end
 
 # update
+post('/students/:id') do
+  
+end
 
 # destroy
