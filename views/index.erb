@@ -15,9 +15,9 @@
         <td><%= student.last_name %></td>
         <td><%= student.age %></td>
         <td><%= ['Gryffyndor','Hufflepuff','Ravenclaw','Slytherin'][student.house_id-1] %></td>
-        <td><a href="/students/<%= student.house_id %>">View</a></td>
-        <td><a href="/students/<%= student.house_id %>/edit">Edit</a></td>
-        <td><a href="/students/<%= student.house_id %>/delete">Delete</a></td>
+        <td><a href="/students/<%= student.id %>">View</a></td>
+        <td><a href="/students/<%= student.id %>/edit">Edit</a></td>
+        <td><a href="/students/<%= student.id %>/delete">Delete</a></td>
       </tr>
     <% end %>
   </tbody>
